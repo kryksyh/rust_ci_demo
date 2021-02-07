@@ -1,3 +1,3 @@
 fn main() {
-    println!("Hello, world!");
+    println!("About to create release!");
 }
