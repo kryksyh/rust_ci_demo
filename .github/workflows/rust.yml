@@ -44,10 +44,7 @@ jobs:
           profile: minimal
           toolchain: stable
           override: true
-        uses: actions-rs/cargo@v1
-        with:
-          command: build
-          args: --release   
+        run: cargo build --release
 
       - name: Archive Release
         uses: thedoctor0/zip-release@master
