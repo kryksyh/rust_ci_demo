@@ -38,13 +38,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       
-      - name: Build project # This would actually build your project, using zip for an example artifact
+      - name: hhmm
         uses: actions-rs/toolchain@v1
         with:
           profile: minimal
           toolchain: stable
           override: true
-        run: cargo build --release
+      - name: Build release
+        uses: actions-rs/cargo@v1
+        with:
+          command: build
+          args: --release   
 
       - name: Archive Release
         uses: thedoctor0/zip-release@master
