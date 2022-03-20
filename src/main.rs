@@ -1,3 +1,3 @@
 fn main() {
-    println!("Stop the war!)
+    println!("Stop the war!");
 }
